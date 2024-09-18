@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
     @GetMapping()
     public String greet(@RequestParam(value = "q", defaultValue = "Maxim") String name) {
-        return "Hi, " + name;
+        return "Hi, my name is" + name;
     }
 }
